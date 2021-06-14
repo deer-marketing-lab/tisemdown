@@ -4,7 +4,7 @@ library(hexSticker)
 cap <- "images/happy_cap.png"
 
 sticker(cap,
-  package = "thesisdown",
+  package = "tisemdown",
   p_family = "Aller_Rg",
   p_size = 7, p_color = "#5B5040", # p_x = 4, p_y = 1.4,
   s_x = 1, s_y = .8, s_width = 0.75, s_height = 0.75,
