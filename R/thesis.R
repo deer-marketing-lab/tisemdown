@@ -99,29 +99,6 @@ thesis_gitbook <- function(...) {
   base
 }
 
-#' Creates an R Markdown Word Thesis document
-#'
-#' This is a function called in output in the YAML of the driver Rmd file
-#' to specify the creation of a Microsoft Word version of the thesis.
-#'
-#' @param ... Further arguments passed to or from other methods.
-#'
-#' @export
-#' @return A Word Document based on (hopefully soon, but not currently)
-#' the Reed Senior Thesis Word template
-#' @examples
-#' \dontrun{
-#' output:thesisdown::thesis_word
-#' }
-thesis_word <- function(...) {
-  base <- bookdown::word_document2(...)
-
-  # Mostly copied from knitr::render_sweave
-  base$knitr$opts_chunk$comment <- NA
-  base$knitr$opts_chunk$fig.align <- "center"
-
-  base
-}
 
 #' Creates an R Markdown epub Thesis document
 #'
