@@ -20,18 +20,18 @@ site: bookdown::bookdown_site
 header-includes:
     - \usepackage{setspace}\onehalfspacing
 
-# This will automatically install the {remotes} package and {thesisdown}
+# This will automatically install the {remotes} package and {tisemdown}
 # Change this to FALSE if you'd like to install them manually on your own.
 params:
-  'Install needed packages for {thesisdown}': True
+  'Install needed packages for {tisemdown}': True
   
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  thesisdown::thesis_pdf: default 
-#  thesisdown::thesis_gitbook: default         
-#  thesisdown::thesis_word: default
-#  thesisdown::thesis_epub: default
+  tismemdown::thesis_pdf: default 
+#  tisemdown::thesis_gitbook: default         
+#  tisemdown::thesis_word: default
+#  tisemdown::thesis_epub: default
 
 # If you are creating a PDF you'll need to write your preliminary content 
 # (e.g., abstract, acknowledgements) below or use code similar to line 25-26 
@@ -73,38 +73,6 @@ If you'd like to include a comment that won't be produced in your resulting file
 
 If you receive a duplicate label error after knitting, make sure to delete the index.Rmd file and then knit again.
 -->
-
-```{r include_packages, include=FALSE}
-# This chunk ensures that the thesisdown package is
-# installed and loaded. This thesisdown package includes
-# the template files for the thesis.
-if (!require(remotes)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    install.packages("remotes", repos = "https://cran.rstudio.com")
-  } else {
-    stop(
-      paste('You need to run install.packages("remotes")",
-            "first in the Console.')
-    )
-  }
-}
-if (!require(thesisdown)) {
-  if (params$`Install needed packages for {thesisdown}`) {
-    remotes::install_github("ismayc/thesisdown")
-  } else {
-    stop(
-      paste(
-        "You need to run",
-        'remotes::install_github("ismayc/thesisdown")',
-        "first in the Console."
-      )
-    )
-  }
-}
-library(thesisdown)
-# Set how wide the R output will go
-options(width = 70)
-```
 
 <!--
 The acknowledgments, preface, dedication, and abstract are added into the PDF
