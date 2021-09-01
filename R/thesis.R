@@ -17,7 +17,7 @@
 #'   template
 #' @examples
 #' \dontrun{
-#' output:thesisdown::thesis_pdf
+#' output:tisemdown::thesis_pdf
 #' }
 thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", pandoc_args = NULL, ...) {
   base <- bookdown::pdf_book(
@@ -52,7 +52,7 @@ thesis_pdf <- function(toc = TRUE, toc_depth = 3, highlight = "default", pandoc_
 #' @return A gitbook webpage
 #' @examples
 #' \dontrun{
-#' output:thesisdown::thesis_gitbook
+#' output:tisemdown::thesis_gitbook
 #' }
 thesis_gitbook <- function(...) {
   config_default <- list(
@@ -111,7 +111,7 @@ thesis_gitbook <- function(...) {
 #' @return A ebook version of the thesis
 #' @examples
 #' \dontrun{
-#' output:thesisdown::thesis_epub
+#' output:tisemdown::thesis_epub
 #' }
 thesis_epub <- function(...) {
   base <- bookdown::epub_book(...)
