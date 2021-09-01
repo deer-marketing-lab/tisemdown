@@ -4,12 +4,12 @@
 # tisemdown <img src="man/figures/tisemdown_hex.png" align="right" width=200 />
 
 This project is a modified version Chester Ismay’s {thesisdown} package
-to provide support for Tilburg School of Economics and management
-Students to adhere to thesis formatting guidelines.
+to provide support for Tilburg School of Economics and Management
+Students to adhere to thesis formatting guidelines for their Masters
+Thesis.
 
 This project provides a template for writing a thesis in R Markdown, and
-rendering those files into a PDF formatted according to [the
-requirements of Tilburg University](FIXME).  
+rendering those files into a PDF.  
 This project was inspired by the
 [thesisdown](https://github.com/ismayc/thesisdown) and
 [bookdown](https://github.com/rstudio/bookdown) packages.
@@ -29,7 +29,7 @@ and formatting can be done using lightweight
 and **R** code and its output can be seamlessly included using
 [rmarkdown](https://rmarkdown.rstudio.com).
 
-### Using tisemdown from Deer Marketing Labs’s GitHub
+### Using `tisemdown` from Deer Marketing Labs’s GitHub
 
 Using {tisemdown} has some prerequisites which are described below. To
 compile PDF documents using **R**, you are going to need to have LaTeX
@@ -70,7 +70,7 @@ To use {thesisdown} from
     `install.packages("thesisdown")` won’t work. Use
     `remotes::install_github()` as shown below instead to install the
     package.
-    
+
     ``` r
     if (!require("remotes")) 
       install.packages("remotes", repos = "https://cran.rstudio.org")
@@ -83,21 +83,18 @@ the following dialog to show up.**
 
 3.  Get started with the {tisemdown} template. Follow these steps:
 
-<!-- end list -->
+-   Create a new RStudio project with a {thesisdown} template.
 
-  - Create a new RStudio project with a {thesisdown} template.
-    
-    In RStudio, click on **File** \> **New Project** \> **New
+    In RStudio, click on **File** &gt; **New Project** &gt; **New
     Directory**. Then select **Thesis Project using tisemdown** from the
     dropdown that will look something like the image below. You’ll see
     the graduation cap as the icon on the left for the appropriate
     project type.
 
-NOTE: UPDATE THIS IMAGE (FIXME\!)
+<!-- NOTE: UPDATE THIS IMAGE (FIXME!) -->
+<!-- ![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_proj.png) -->
 
-![](https://raw.githubusercontent.com/ismayc/thesisdown/master/docs/reference/figures/thesis_proj.png)
-
-  - Next, give your project a name and specify where you’d like the
+-   Next, give your project a name and specify where you’d like the
     files to appear. In the screenshot below, the project name is
     `my_thesis` and it will appear as a new folder on my Desktop.
 
@@ -147,8 +144,8 @@ This file contains all the meta information that goes at the beginning
 of your document. You’ll need to edit the top portion of this file (the
 YAML) to put your name on the first page, the title of your thesis, etc.
 Note that you need to have at least one chapter start in the `index.Rmd`
-file for the build to work. For the template, this is done with `#
-Introduction` in the example from the template.
+file for the build to work. For the template, this is done with
+`# Introduction` in the example from the template.
 
 ### `01-chap1.Rmd`, `02-chap2.Rmd`, etc.
 

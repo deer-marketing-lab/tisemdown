@@ -24,7 +24,7 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[12pt,oneside]{tisemthesis}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -77,22 +77,31 @@ $endif$
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
 \title{$title$}
+\subtitle{$subtitle$}
 \author{$author$}
+\studentnumber{$studentnumber$}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-\institution{$institution$}
+\supervisor{$supervisor$}
+\cosupervisor{$cosupervisor$}
+\institute{$institute$}
+\university{$university$}
+\institute{$institute$}
+\faculty{$faculty$}
+\location{$location$}
+% \division{$division$}
+% \advisor{$advisor$}
+% \institution{$institution$}
 \degree{$degree$}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
 $if(altadvisor)$
-\altadvisor{$altadvisor$}
+\cosupervisor{$cosupervisor$}
 $endif$
 % End of CII addition
 
 %%% Remember to use the correct department!
-\department{$department$}
+% \department{$department$}
 % if you're writing a thesis in an interdisciplinary major,
 % uncomment the line below and change the text as appropriate.
 % check the Senior Handbook if unsure.
@@ -176,6 +185,10 @@ $preface$
 $abstract$
 }
 
+\ManagementSummary{
+$managementsummary$
+}
+
 $for(header-includes)$
 	$header-includes$
 $endfor$
@@ -194,6 +207,12 @@ $endif$
 
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
+
+$if(managementsummary)$
+  \begin{managementsummary}
+    $managementsummary$
+  \end{managementsummary}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -243,4 +262,3 @@ $body$
 % Index?
 
 \end{document}
-

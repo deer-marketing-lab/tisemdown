@@ -1,6 +1,6 @@
 Package: tisemdown
 Title: An R Markdown thesis template using the bookdown package
-Version: 0.1.0.9000
+Version: 0.1.0.
 Authors@R: c(
     person("Lachlan", "Deer", email = "lachlan.deer@gmail.com", role = c("cre", "aut"))
     )
