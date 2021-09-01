@@ -50,13 +50,13 @@ to knit as well. Here is one such example of how to do so:
 tinytex::tlmgr_install("babel-portuges")
 ```
 
-To use {thesisdown} from
+To use {tisemdown} from
 [RStudio](https://www.rstudio.com/products/rstudio/download/):
 
 1.  Ensure that you have already installed LaTeX, and are using the
     latest version of
     [RStudio](https://www.rstudio.com/products/rstudio/download/). You
-    can use `thesisdown` without RStudio. For example, you can write the
+    can use `tisemdown` without RStudio. For example, you can write the
     Rmd files in your favorite text editor
     (e.g. [Atom](https://atom.io/),
     [Notepad++](https://notepad-plus-plus.org/)). But RStudio is
@@ -67,7 +67,7 @@ To use {thesisdown} from
 
 2.  Install the {bookdown} and {tisemdown} packages. Note that
     {tisemdown} is not available on CRAN at the moment and that’s why
-    `install.packages("thesisdown")` won’t work. Use
+    `install.packages("tisemdown")` won’t work. Use
     `remotes::install_github()` as shown below instead to install the
     package.
 
@@ -83,7 +83,7 @@ the following dialog to show up.**
 
 3.  Get started with the {tisemdown} template. Follow these steps:
 
--   Create a new RStudio project with a {thesisdown} template.
+-   Create a new RStudio project with a {tisemdown} template.
 
     In RStudio, click on **File** &gt; **New Project** &gt; **New
     Directory**. Then select **Thesis Project using tisemdown** from the
