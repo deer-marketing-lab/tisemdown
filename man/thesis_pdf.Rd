@@ -25,12 +25,12 @@ and "haddock". Pass NULL to prevent syntax highlighting.}
 \item{...}{Further arguments passed to or from other methods.}
 }
 \value{
-A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
+A modified \code{pdf_document} based on the TiSEM Thesis LaTeX
   template
 }
 \description{
 This is a function called in output in the YAML of the driver Rmd file
-to specify using the Reed College Senior Thesis LaTeX template and cls files.
+to specify using the TiSEM Thesis LaTeX template and cls files.
 }
 \examples{
 \dontrun{
