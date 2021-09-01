@@ -3,4 +3,3 @@
 export(thesis_epub)
 export(thesis_gitbook)
 export(thesis_pdf)
-export(thesis_word)

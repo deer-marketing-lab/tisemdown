@@ -1,4 +1,9 @@
-# thesisdown (development version - 0.2.0.9000)
+# tisemdown (version - 0.1.0)
+
+- [@lachlandeer](https://lachlandeer.github.io) modified template and cls to fit within TiSEM thesis formatting.
+
+
+# From `thesisdown`
 
 ## Breaking changes to the template
  

@@ -5,6 +5,6 @@ invisible(lapply(suggest_pkgs, usethis::use_package, type = "Suggests"))
 
 usethis::use_pkgdown()
 usethis::use_readme_rmd()
-usethis::use_mit_license(name = "Chester Ismay")
+usethis::use_mit_license(name = "Lachlan Deer")
 
 usethis::use_package("R.utils", type = "Imports")

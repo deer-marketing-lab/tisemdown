@@ -1,14 +1,8 @@
-% This is the Reed College LaTeX thesis template. Most of the work
+% This is ta LaTeX thesis template. Most of the work
 % for the document class was done by Sam Noble (SN), as well as this
 % template. Later comments etc. by Ben Salzberg (BTS). Additional
 % restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
 %
-% See https://www.reed.edu/cis/help/LaTeX/index.html for help. There are a
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
 %
 % Any line that starts with a percent symbol is a comment.
 % They won't show up in the document, and are useful for notes
@@ -16,15 +10,11 @@
 % Commenting also removes a line from the document;
 % very handy for troubleshooting problems. -BTS
 
-% As far as I know, this follows the requirements laid out in
-% the 2002-2003 Senior Handbook. Ask a librarian to check the
-% document before binding. -SN
-
 %%
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\documentclass[12pt,twoside]{reedthesis}
+\documentclass[12pt,oneside]{tisemthesis}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
@@ -77,22 +67,31 @@ $endif$
 
 % To pass between YAML and LaTeX the dollar signs are added by CII
 \title{$title$}
+\subtitle{$subtitle$}
 \author{$author$}
+\studentnumber{$studentnumber$}
 % The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
 \date{$date$}
-\division{$division$}
-\advisor{$advisor$}
-\institution{$institution$}
+\supervisor{$supervisor$}
+\cosupervisor{$cosupervisor$}
+\institute{$institute$}
+\university{$university$}
+\institute{$institute$}
+\faculty{$faculty$}
+\location{$location$}
+% \division{$division$}
+% \advisor{$advisor$}
+% \institution{$institution$}
 \degree{$degree$}
 %If you have two advisors for some reason, you can use the following
 % Uncommented out by CII
 $if(altadvisor)$
-\altadvisor{$altadvisor$}
+\cosupervisor{$cosupervisor$}
 $endif$
 % End of CII addition
 
 %%% Remember to use the correct department!
-\department{$department$}
+% \department{$department$}
 % if you're writing a thesis in an interdisciplinary major,
 % uncomment the line below and change the text as appropriate.
 % check the Senior Handbook if unsure.
@@ -176,6 +175,10 @@ $preface$
 $abstract$
 }
 
+\ManagementSummary{
+$managementsummary$
+}
+
 $for(header-includes)$
 	$header-includes$
 $endfor$
@@ -194,6 +197,12 @@ $endif$
 
 \frontmatter % this stuff will be roman-numbered
 \pagestyle{empty} % this removes page numbers from the frontmatter
+
+$if(managementsummary)$
+  \begin{managementsummary}
+    $managementsummary$
+  \end{managementsummary}
+$endif$
 
 $if(acknowledgements)$
   \begin{acknowledgements}
@@ -243,4 +252,3 @@ $body$
 % Index?
 
 \end{document}
-
