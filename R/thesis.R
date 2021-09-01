@@ -1,7 +1,7 @@
 #' Creates an R Markdown PDF Thesis document
 #'
 #' This is a function called in output in the YAML of the driver Rmd file
-#' to specify using the Reed College Senior Thesis LaTeX template and cls files.
+#' to specify using the TiSEM Thesis LaTeX template and cls files.
 #'
 #' @export
 #'
@@ -13,7 +13,7 @@
 #' "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn",
 #' and "haddock". Pass NULL to prevent syntax highlighting.
 #'
-#' @return A modified \code{pdf_document} based on the Reed Senior Thesis LaTeX
+#' @return A modified \code{pdf_document} based on the TiSEM Thesis LaTeX
 #'   template
 #' @examples
 #' \dontrun{

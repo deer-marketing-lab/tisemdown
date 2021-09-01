@@ -36,7 +36,7 @@ include_graphics(path = "figure/tilburg_color.png")
 image is 20% of what the linewidth is in LaTeX. You can also center
 the image using `fig.align="center"` as shown.-->
 
-Here is a reference to the Reed logo: Figure \@ref(fig:tilburglogo).  
+Here is a reference to the Tilburg logo: Figure \@ref(fig:tilburglogo).  
 Note the use of the `fig:` code here.  By naming the **R** chunk that contains the figure, we can then reference that figure later as done in the first sentence here.  
 We can also specify the caption for the figure via the R chunk option `fig.cap`.
 

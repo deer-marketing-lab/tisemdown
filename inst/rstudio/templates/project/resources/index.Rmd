@@ -1,13 +1,4 @@
 ---
-# title: 'My Thesis'
-# author: 'Your R. Name'
-# date: 'DDth May 20xx'
-# institution: 'Tilburg University'
-# division: 'Tilburg School of Economics and Management'
-# advisor: 'Advisor F. Name'
-# # If you have more two advisors, un-silence line 7
-# altadvisor: 'Your Other Advisor'
-# department: 'Marketing'
 title: "My Title"
 subtitle: "My subtitle"
 author: "Petra Muster"
@@ -57,7 +48,7 @@ acknowledgements: |
 # dedication: |
 #   You can have a dedication here if you wish. 
 # preface: |
-#   This is an example of a thesis setup to use the reed thesis document class 
+#   This is an example of a thesis setup to use the TiSEM thesis document class 
 #   (for LaTeX) and the R bookdown package, in general.
   
 # Specify the location of the bibliography below
