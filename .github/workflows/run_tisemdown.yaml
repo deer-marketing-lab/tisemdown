@@ -9,14 +9,15 @@ jobs:
   bookdown:
     name: Render-Book
     runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v1
       - uses: r-lib/actions/setup-r@v1
       - uses: r-lib/actions/setup-pandoc@v1
       - name: Install rmarkdown, bookdown, tinytex and remotes
         run: Rscript -e 'install.packages(c("rmarkdown","bookdown", "tinytex", "remotes"))'
-      - name: Install Tinytex
-        run: Rscript -e 'tinytex::install_tinytex()'
+      - uses: r-lib/actions/setup-tinytex@v1
       - name: Install tisemdown
         run: Rscript -e 'remotes::install_github("deer-marketing-lab/tisemdown")'
       - name: Render Book
