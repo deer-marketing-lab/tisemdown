@@ -3,6 +3,11 @@
 
 # tisemdown <img src="man/figures/tisemdown_hex.png" align="right" width=200 />
 
+[![Actions Status:
+master](https://github.com/deer-marketing-lab/tisemdown/workflows/renderbook/badge.svg)](https://github.com/deer-marketing-lab/tisemdown/actions?query=workflow%3A%22renderbook%22)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/version-0.1.0-red.svg)]()
+
 This project provides a RMarkdown template to support Tilburg School of
 Economics and Management students to adhere to thesis formatting
 guidelines for their Masters Thesis.
@@ -15,8 +20,10 @@ guidelines for their Masters Thesis.
 need to make sure that LaTeX and R Markdown are installed on your PC. To
 do this:
 
--   Open RStudio
--   Enter the following lines into the console and press `RETURN`:
+  - Open RStudio
+  - Enter the following lines into the console and press `RETURN`:
+
+<!-- end list -->
 
 ``` r
 install.packages(c('tinytex', 'rmarkdown', 'bookdown'))
@@ -43,21 +50,23 @@ to the next step.**
 
 Follow these steps:
 
--   Create a new RStudio project with a {tisemdown} template.
-    -   In RStudio, click on **File** &gt; **New Project** &gt; **New
+  - Create a new RStudio project with a {tisemdown} template.
+      - In RStudio, click on **File** \> **New Project** \> **New
         Directory**.
-    -   Then select **Thesis Project using tisemdown** from the
+      - Then select **Thesis Project using tisemdown** from the
         dropdown. It will be near the bottom.
-        -   HINT: You’ll see the graduation cap as the icon on the left
-            for the appropriate project type.
+          - HINT: You’ll see the graduation cap as the icon on the left
+            for the appropriate project
+type.
 
 <!-- NOTE: UPDATE THIS IMAGE (FIXME!) -->
 
 ![](https://raw.githubusercontent.com/deer-marketing-lab/tisemdown/master/docs/reference/figures/tisemdown_proj.png)
 
--   Next, give your project a name and specify where you’d like the
+  - Next, give your project a name and specify where you’d like the
     files to appear. In the screenshot below, the project name is
-    `my_thesis` and it will appear as a new folder on my Desktop.
+    `my_thesis` and it will appear as a new folder on my
+Desktop.
 
 ![](https://raw.githubusercontent.com/deer-marketing-lab/tisemdown/master/docs/reference/figures/tisemdown_proj_name.png)
 
@@ -105,8 +114,8 @@ This file contains all the meta information that goes at the beginning
 of your document. You’ll need to edit the top portion of this file (the
 YAML) to put your name on the first page, the title of your thesis, etc.
 Note that you need to have at least one chapter start in the `index.Rmd`
-file for the build to work. For the template, this is done with
-`# Introduction` in the example from the template.
+file for the build to work. For the template, this is done with `#
+Introduction` in the example from the template.
 
 ### `01-chap1.Rmd`, `02-chap2.Rmd`, etc.
 
