@@ -24,7 +24,7 @@ jobs:
         run: Rscript -e 'rmarkdown::draft("index.Rmd", template = "thesis", package = "tisemdown", create_dir = TRUE, edit = FALSE)'
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("index/index.Rmd")'
-      - uses: actions/upload-artifact@v1
-        with:
-          name: _book
-          path: _book/
+      # - uses: actions/upload-artifact@v1
+      #   with:
+      #     name: _book
+      #     path: _book/
