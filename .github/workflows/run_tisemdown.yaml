@@ -20,6 +20,8 @@ jobs:
       - uses: r-lib/actions/setup-tinytex@v1
       - name: Install tisemdown
         run: Rscript -e 'remotes::install_github("deer-marketing-lab/tisemdown")'
+      - name: Create template thesis:
+        run: Rscript -e 'rmarkdown::draft('index.Rmd', template = 'thesis', package = 'tisemdown', create_dir = FALSE, edit = FALSE)'
       - name: Render Book
         run: Rscript -e 'bookdown::render_book("index.Rmd")'
       - uses: actions/upload-artifact@v1
