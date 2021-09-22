@@ -21,9 +21,9 @@ jobs:
       - name: Install tisemdown
         run: Rscript -e 'remotes::install_github("deer-marketing-lab/tisemdown")'
       - name: Create template thesis
-        run: Rscript -e 'rmarkdown::draft("index.Rmd", template = "thesis", package = "tisemdown", create_dir = FALSE, edit = FALSE)'
+        run: Rscript -e 'rmarkdown::draft("index.Rmd", template = "thesis", package = "tisemdown", create_dir = TRUE, edit = FALSE)'
       - name: Render Book
-        run: Rscript -e 'bookdown::render_book("index.Rmd")'
+        run: Rscript -e 'bookdown::render_book("index/index.Rmd")'
       - uses: actions/upload-artifact@v1
         with:
           name: _book
