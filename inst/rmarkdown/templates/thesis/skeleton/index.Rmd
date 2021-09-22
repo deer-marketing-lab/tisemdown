@@ -28,7 +28,7 @@ params:
 # Remove the hashtag to specify which version of output you would like.
 # Can only choose one at a time.
 output:
-  tismemdown::thesis_pdf: default 
+  tisemdown::thesis_pdf: default 
 #  tisemdown::thesis_gitbook: default         
 #  tisemdown::thesis_word: default
 #  tisemdown::thesis_epub: default
