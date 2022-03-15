@@ -18,7 +18,6 @@ site: bookdown::bookdown_site
 # The next two lines allow you to change the spacing in your thesis. You can 
 # switch out \onehalfspacing with \singlespacing or \doublespacing, if desired.
 header-includes:
-header-includes:    
     - \linespread{1.25}
     - \usepackage[tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
     - \usepackage{titlesec}
