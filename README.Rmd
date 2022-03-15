@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
  [![Actions Status: master](https://github.com/deer-marketing-lab/tisemdown/workflows/renderbook/badge.svg)](https://github.com/deer-marketing-lab/tisemdown/actions?query=workflow%3A"renderbook")
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-0.1.0-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/version-0.2.0-red.svg)]()
 
 This project provides a RMarkdown template to support Tilburg School of Economics and Management students to adhere to thesis formatting guidelines for their Masters Thesis.
 
